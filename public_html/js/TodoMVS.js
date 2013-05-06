@@ -6,9 +6,8 @@ TodoMVC.addregions({
     footer : '#footer'
 });
 
-TodoMVC.on('initialize:after'), function() {
-    
-    
-}
+TodoMVC.on('initialize:after', function() {
+    Backbone.history.start();
+});
 
 
